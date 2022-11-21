@@ -30,6 +30,10 @@ tasks.withType<KotlinCompile> {
 	}
 }
 
+tasks.compileTestKotlin {
+	kotlinOptions.languageVersion = "1.7"
+}
+
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
